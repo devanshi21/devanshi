@@ -206,12 +206,12 @@ body {
         /*padding: 40px 0 20px 0;*/
         margin: 0;
       }
-    .tabs {
+    /*.tabs {
         left: 50%;
         transform: translateX(-50%);
         position: relative;
         background: white;
-        padding: 50px;
+        padding: 10px;
         padding-bottom: 80px;
         
         box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
@@ -229,18 +229,17 @@ body {
       }
       .tabs ul {
         list-style-type: none;
-        padding-left: 0;
+        /*padding-left: 0;
         display: flex;
         flex-direction: row;
         margin-bottom: 10px;
-        justify-content: space-between;
+        /*justify-content: space-between;
         align-items: flex-end;
         flex-wrap: wrap;
       }
       .tabs ul li {
         box-sizing: border-box;
         flex: 1;
-        width: 25%;
         padding: 0 10px;
         text-align: center;
       }
@@ -260,16 +259,6 @@ body {
         -ms-user-select: none;
         user-select: none;
       }
-      .tabs ul li label br {
-        display: none;
-      }
-      .tabs ul li label svg {
-        fill: #929daf;
-        height: 1.2em;
-        vertical-align: bottom;
-        margin-right: 0.2em;
-        transition: all 0.2s ease-in-out;
-      }
       .tabs ul li label:hover, .tabs ul li label:focus, .tabs ul li label:active {
         outline: 0;
         color: #bec5cf;
@@ -278,7 +267,7 @@ body {
         fill: #bec5cf;
       }
       .tabs .content {
-        margin-top: 30px;
+        margin-top: 20px;
       }
       .tabs .content section {
         display: none;
@@ -300,9 +289,8 @@ body {
       }
       .tabs .content section h2::after {
         content: "";
-        position: relative;
         display: block;
-        width: 30px;
+        width: 20px;
         height: 3px;
         background: #428BFF;
         margin-top: 5px;
@@ -333,7 +321,7 @@ body {
       .tabs input[name=tab-control]:nth-of-type(2):checked ~ ul > li:nth-child(2) > label svg {
         fill: #428BFF;
       }
-      @media (max-width: 600px) {
+      @media (max-width: 300px) {
         .tabs input[name=tab-control]:nth-of-type(2):checked ~ ul > li:nth-child(2) > label {
           background: rgba(0, 0, 0, 0.08);
         }
@@ -351,7 +339,7 @@ body {
       .tabs input[name=tab-control]:nth-of-type(3):checked ~ ul > li:nth-child(3) > label svg {
         fill: #428BFF;
       }
-      @media (max-width: 600px) {
+      @media (max-width: 300px) {
         .tabs input[name=tab-control]:nth-of-type(3):checked ~ ul > li:nth-child(3) > label {
           background: rgba(0, 0, 0, 0.08);
         }
@@ -428,7 +416,7 @@ body {
         .tabs .content section h2 {
           display: block;
         }
-      }
+      }*/
 
 /* Wh questions */
 
@@ -538,7 +526,7 @@ ol.gradient-list > li::before, ol.gradient-list > li {
   .iframe-container {
     overflow: hidden;
     /* 16:9 aspect ratio */
-    padding-top: 56.25%;
+    padding-top: 56.0%;
     position: relative;
   }
   
@@ -615,5 +603,80 @@ ol.gradient-list > li::before, ol.gradient-list > li {
 font-size: 40px;
 text-align: center;
   }
+/* Tabs try new */
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none; }
 
-/* animation */
+/*.tabs {
+  display: none;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0;
+  overflow: hidden;
+  
+}*/
+  /*.tabs [class^="tab"] label,
+  .tabs [class*=" tab"] label {
+    color: #252525;
+    cursor: pointer;
+    display: block;
+    font-size: 1.5em;
+    line-height: 1em;
+    padding: 2rem 0;
+    text-align: center; }*/
+  .tabs [class^="tab"] [type="radio"],
+  .tabs [class*=" tab"] [type="radio"] {
+    border-bottom: 1px solid rgba(239, 237, 239, 0.5);
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: block;
+    width: 100%;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
+    .tabs [class^="tab"] [type="radio"]:hover, .tabs [class^="tab"] [type="radio"]:focus,
+    .tabs [class*=" tab"] [type="radio"]:hover,
+    .tabs [class*=" tab"] [type="radio"]:focus {
+      border-bottom: 10px solid #0c0d0e; }
+    .tabs [class^="tab"] [type="radio"]:checked,
+    .tabs [class*=" tab"] [type="radio"]:checked {
+      border-bottom: 10px solid #fd264f; }
+    .tabs [class^="tab"] [type="radio"]:checked + div,
+    .tabs [class*=" tab"] [type="radio"]:checked + div {
+      opacity: 1; }
+    .tabs [class^="tab"] [type="radio"] + div,
+    .tabs [class*=" tab"] [type="radio"] + div {
+      display: block;
+      opacity: 0;
+      padding: 2rem 0;
+      width: 90%;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out; }
+  .tabs .tab-2 {
+    width: 50%;
+  }
+  /*  .tabs .tab-2 [type="radio"] + div {
+      width: 200%;
+      margin-left: 200%; }
+    .tabs .tab-2 [type="radio"]:checked + div {
+      margin-left: 0;  
+   }
+    .tabs .tab-2:last-child [type="radio"] + div {
+      margin-left: 100%;
+    /*max-height: min-content; }
+    /*.tabs .tab-2:last-child [type="radio"]:checked + div {
+      margin-left: -100%; 
+      }*/
+
