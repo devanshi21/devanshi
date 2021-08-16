@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <script text="text/babel">
+    </script>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <script src="anim.js"></script>
+    <style type="text/css">
+        @font-face{font-family:europa;src:url(https://use.typekit.net/af/821a05/00000000000000007735a082/30/l?subset_id=2&fvd=n3&v=3) format("woff2"),url(https://use.typekit.net/af/821a05/00000000000000007735a082/30/d?subset_id=2&fvd=n3&v=3) format("woff"),url(https://use.typekit.net/af/821a05/00000000000000007735a082/30/a?subset_id=2&fvd=n3&v=3) format("opentype");font-weight:300;font-style:normal;font-display:auto;}@font-face{font-family:europa;src:url(https://use.typekit.net/af/1db03a/00000000000000007735a08e/30/l?subset_id=2&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/1db03a/00000000000000007735a08e/30/d?subset_id=2&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/1db03a/00000000000000007735a08e/30/a?subset_id=2&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-display:auto;}@font-face{font-family:europa;src:url(https://use.typekit.net/af/ebcd51/00000000000000007735a081/30/l?subset_id=2&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/ebcd51/00000000000000007735a081/30/d?subset_id=2&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/ebcd51/00000000000000007735a081/30/a?subset_id=2&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;font-display:auto;}@font-face{font-family:europa;src:url(https://use.typekit.net/af/d08711/00000000000000007735a08a/30/l?subset_id=2&fvd=i3&v=3) format("woff2"),url(https://use.typekit.net/af/d08711/00000000000000007735a08a/30/d?subset_id=2&fvd=i3&v=3) format("woff"),url(https://use.typekit.net/af/d08711/00000000000000007735a08a/30/a?subset_id=2&fvd=i3&v=3) format("opentype");font-weight:300;font-style:italic;font-display:auto;}@font-face{font-family:europa;src:url(https://use.typekit.net/af/40cfbf/00000000000000007735a08f/30/l?subset_id=2&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/40cfbf/00000000000000007735a08f/30/d?subset_id=2&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/40cfbf/00000000000000007735a08f/30/a?subset_id=2&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;font-display:auto;}@font-face{font-family:europa;src:url(https://use.typekit.net/af/2a1b80/00000000000000007735a09e/30/l?subset_id=2&fvd=i7&v=3) format("woff2"),url(https://use.typekit.net/af/2a1b80/00000000000000007735a09e/30/d?subset_id=2&fvd=i7&v=3) format("woff"),url(https://use.typekit.net/af/2a1b80/00000000000000007735a09e/30/a?subset_id=2&fvd=i7&v=3) format("opentype");font-weight:700;font-style:italic;font-display:auto;}
+        #navbarNav li a {
+            font-family: europa;
+            font-size: 20px;
+            font-weight: 900;
+            color: black;
+        }
+        #brand{ 
+            font-size: 30px;
+            position: relative;
+            font-weight: 1000;
+            margin-left: 10px;
+            padding-right: 33%;
+            color: black;
+        }
+        .col-12{
+            font-size: 20px;
+            font-weight: 900;
+            margin-bottom: 20px;
+        }
+    </style>
+    <title>Devanshi Patel</title>
+  </head>
+  <body>
+        <div class="container-fluid">
+                <div class="row">
+                  <div class="col-12">
+                    <nav class="navbar sticky-top navbar-expand-lg navbar-light">
+                        <a class="navbar-brand" href="index.html" id="brand">DEVANSHI PATEL</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                          <ul class="navbar-nav">
+                            <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="#">Exploring</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#start">Let's Start</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Know more about me!</a>
+                            </li>
+                          </ul>
+                        </div>
+                    </nav>
+                  </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-12" >
+                        <div class="card__head card-1">
+                            <div class="card__icon__head"><h3 class="card__title__head">National Management Olyampiad(Semi-Finals)</h3></div>    
+                        </div>
+                    </div>
+                    <div class="col-xl-12">
+                        
+                        <div class="tabs">
+  
+                            <input type="radio" id="tab1" name="tab-control" checked>
+                            <input type="radio" id="tab2" name="tab-control">
+                            <input type="radio" id="tab3" name="tab-control">  
+                            <input type="radio" id="tab4" name="tab-control">
+                            <ul>
+                              <li title="Features"><label for="tab1" role="button">
+                                 <!-- <svg viewBox="0 0 24 24"><path d="M14,2A8,8 0 0,0 6,10A8,8 0 0,0 14,18A8,8 0 0,0 22,10H20C20,13.32 17.32,16 14,16A6,6 0 0,1 8,10A6,6 0 0,1 14,4C14.43,4 14.86,4.05 15.27,4.14L16.88,2.54C15.96,2.18 15,2 14,2M20.59,3.58L14,10.17L11.62,7.79L10.21,9.21L14,13L22,5M4.93,5.82C3.08,7.34 2,9.61 2,12A8,8 0 0,0 10,20C10.64,20 11.27,19.92 11.88,19.77C10.12,19.38 8.5,18.5 7.17,17.29C5.22,16.25 4,14.21 4,12C4,11.7 4.03,11.41 4.07,11.11C4.03,10.74 4,10.37 4,10C4,8.56 4.32,7.13 4.93,5.82Z"/></svg>-->
+                                    <br><span>Problem statement:</span></label>
+                                </li>
+                              <li title="Delivery Contents"><label for="tab2" role="button">
+                                  <br><span>My approach:</span></label>
+                              </li>
+                             <!-- <li title="Shipping"><label for="tab3" role="button"><svg viewBox="0 0 24 24">
+                              <path d="M3,4A2,2 0 0,0 1,6V17H3A3,3 0 0,0 6,20A3,3 0 0,0 9,17H15A3,3 0 0,0 18,20A3,3 0 0,0 21,17H23V12L20,8H17V4M10,6L14,10L10,14V11H4V9H10M17,9.5H19.5L21.47,12H17M6,15.5A1.5,1.5 0 0,1 7.5,17A1.5,1.5 0 0,1 6,18.5A1.5,1.5 0 0,1 4.5,17A1.5,1.5 0 0,1 6,15.5M18,15.5A1.5,1.5 0 0,1 19.5,17A1.5,1.5 0 0,1 18,18.5A1.5,1.5 0 0,1 16.5,17A1.5,1.5 0 0,1 18,15.5Z" />
+                          </svg><br><span>Shipping</span></label></li>    <li title="Returns"><label for="tab4" role="button"><svg viewBox="0 0 24 24">
+                              <path d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z" />
+                          </svg><br><span>Returns</span></label></li>-->
+                            </ul>
+                            
+                            <div class="slider"><div class="indicator"></div></div>
+                            <div class="content">
+                              <section>
+                                <h2></h2>
+                                <center><img src="C:\Users\Devanshi\Documents\PM port\Pictures\Overview\aadhar.png" style="align-content: center;"></center><br><br>
+                                    <div id ="Statement">
+                                        Keeping above facts in perspective,Your organization is a consulting agency for Government of India and you need to address below concerns,
+                                        <br><br>
+                                    </div>
+                                <ol class="gradient-list">
+                                    <li>To increase usability and easiness without compromising privacy of an individual.</li>
+                                    <li>Come-Up with your innovative plan to Increase reach of ADHAAR & completely cover India's Population especially in remote parts of country where technology access is nil.</li>
+                                    <li>Make ADHAAR’s financial model to be a self-sustaining & independent, so that it can help to fund its own development projects, technologies enhancements, R&D, etc without being government dependent.</li>
+                                    <li>Restructure current ADHAAR HR Policy to avoid fraudulent activities done due to loopholes in recruitment process and presence of mischievous elements.</li>
+                                  </ol>
+                                  
+                                  <div id ="Statement">
+                                    <a href="https://www.managementolympiad.org/bcs-semi-final.php" style="text-decoration: none;"><u>For more details on problem statement-></u></a>
+                                </div>
+                              </section>
+                                  <section>
+                                    <h2>My Approach</h2>
+                                    <div id ="Statement">
+                                        <i class="fas fa-clipboard"></i> A solution with technology insight for Aadhar system.
+                                        <br><br>
+                                    </div>
+                                    <div class="iframe-container">
+                                        <iframe src="https://www.youtube.com/embed/sO96tuwQKj8" title="Aadhar card dillema" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                <ol class="gradient-list">
+                                    <li>According to the census in 2011, almost 177 lakh (17.7 crore) people are homeless in India.Which impacts the process of Aadhaar card enrolment as no permanent address is present.
+                                        (Decrease fraud). The solution by IT to this is a process which allows a Sakshi (witness , who has all supporting documents) person to take a guarantee on the person who wants to enroll for Aadhaar. In case no other person is ready a government employee can take on the Guarantee (Sakshi Mechanism to decrease fraud document or people who does not posse all documents).</li>
+                                    <li>For maximum awareness to the BPL/Famers or people who needs Government help can be reached via Aadhaar. To leverage that the call centers can be establishes who updates the farmer about farmer related yojnas’.Call center because 17% of smartphone users + 61% cellphone users are present in India. For the remaining 22% the best way is updates on radio. Also the local group leaders + NGO’s + Gram panchayat person’s can be made leaders to make more people aware about the benefits.</li>
+                                    <li>There are many FAKE Aadhaar card making applications which should be analyzed and banned by government on web or any smartphone platform.(Decrease leakage of information to unauthorized authority).</li>
+                                    <li>Assuming that you are targeting to scale from a 150 workforce in 2 states with 29 ESU's to lets consider 29 states 2175 workforce 421 ESU's SELCO will need to train the workforce ,so for replication training process symmetrically the computer systems will play a major roles on training at every ESU centers with same kind of training processes also region specific marketing training can also be given leveraging the same.(Decrease the finance cost).</li>
+                                    <li>Technical check by the supervisor on the Aadhaar enrollment machine from the Desired Quality Check  List given by IT, this will decrease the enrollments done via mall function machines. Even in criteria from the checklist fails, the machine will be returned to technical team.</li>
+                                    <li>Limiting access to the third party company Example: If a SIM card company needs the Biomatrix proof the system will take fingerprint and acknowledge just Yes /No as answer with photo no other details will be shared.(Decreasing access to data visibility).</li>
+                                    <li>Third party should not be provided access to write on DB (database)unless and until it is verified by a machine that the person/supervisor is authorized to write in it, by the system via the supervisor’s fingerprints daily.</li>
+                                    <li>Digitally encrypted tablets will be given to Aadhaar Kendra’s people who all will do job of enrollment of BPL/poor people who can’t be reached digitally. Each Aadhaar person will go to their house and enroll their data in tablet also the same technique can be used if any citizen wants to update their details they can all come at the Nearest Aadhaar Kendra’s and the person will come at their address and update the details.(Service reaches homes for BPL/digitally not reachable people).In that the data can only be uploaded via Aadhar Kendra’s the digital tablet won’t have any interconnection facility/USB/ another connectivity.</li>
+                                    <li>Currently the Virtual ID can be produced via app launched by UIDAI in which the user can share the Virtual ID instead of sharing the whole Aadhaar number. In addition to that is limiting the time of usage of virtual ID + Information with it.<br>
+                                        Example: If a user ‘ABC’ generates a Virtual ID he/she should select a time until which that ID would be active so let’s say that its 15 minutes with only my name and address to be shared. (Not all details).</li>
+                                  </ol>
+                                  <section>
+                              <section>
+                              </div>
+                          </div>
+
+                    </div>
+                    <div class="col-12">
+                    </div>
+                </div>
+        </div>          
+  </body>
+</html>

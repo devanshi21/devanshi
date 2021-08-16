@@ -1,1 +1,122 @@
-Hello World
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <script type="text/javascript" src="anim.js"></script>
+    <style type="text/css">
+        @font-face{font-family:europa;src:url(https://use.typekit.net/af/821a05/00000000000000007735a082/30/l?subset_id=2&fvd=n3&v=3) format("woff2"),url(https://use.typekit.net/af/821a05/00000000000000007735a082/30/d?subset_id=2&fvd=n3&v=3) format("woff"),url(https://use.typekit.net/af/821a05/00000000000000007735a082/30/a?subset_id=2&fvd=n3&v=3) format("opentype");font-weight:300;font-style:normal;font-display:auto;}@font-face{font-family:europa;src:url(https://use.typekit.net/af/1db03a/00000000000000007735a08e/30/l?subset_id=2&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/1db03a/00000000000000007735a08e/30/d?subset_id=2&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/1db03a/00000000000000007735a08e/30/a?subset_id=2&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-display:auto;}@font-face{font-family:europa;src:url(https://use.typekit.net/af/ebcd51/00000000000000007735a081/30/l?subset_id=2&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/ebcd51/00000000000000007735a081/30/d?subset_id=2&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/ebcd51/00000000000000007735a081/30/a?subset_id=2&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;font-display:auto;}@font-face{font-family:europa;src:url(https://use.typekit.net/af/d08711/00000000000000007735a08a/30/l?subset_id=2&fvd=i3&v=3) format("woff2"),url(https://use.typekit.net/af/d08711/00000000000000007735a08a/30/d?subset_id=2&fvd=i3&v=3) format("woff"),url(https://use.typekit.net/af/d08711/00000000000000007735a08a/30/a?subset_id=2&fvd=i3&v=3) format("opentype");font-weight:300;font-style:italic;font-display:auto;}@font-face{font-family:europa;src:url(https://use.typekit.net/af/40cfbf/00000000000000007735a08f/30/l?subset_id=2&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/40cfbf/00000000000000007735a08f/30/d?subset_id=2&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/40cfbf/00000000000000007735a08f/30/a?subset_id=2&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;font-display:auto;}@font-face{font-family:europa;src:url(https://use.typekit.net/af/2a1b80/00000000000000007735a09e/30/l?subset_id=2&fvd=i7&v=3) format("woff2"),url(https://use.typekit.net/af/2a1b80/00000000000000007735a09e/30/d?subset_id=2&fvd=i7&v=3) format("woff"),url(https://use.typekit.net/af/2a1b80/00000000000000007735a09e/30/a?subset_id=2&fvd=i7&v=3) format("opentype");font-weight:700;font-style:italic;font-display:auto;}
+        #navbarNav li a {
+            font-family: europa;
+            font-size: 20px;
+            font-weight: 900;
+            color: black;
+            margin-right: 10px;
+            position: relative;
+            
+        }
+        #brand{ 
+            font-size: 30px;
+            position: relative;
+            font-weight: 1000;
+            margin-left: 10px;
+            padding-right: 30%;
+            color: black;
+        }
+    </style>
+    <title>Devanshi Patel</title>
+  </head>
+  <body>
+        <div class="container-fluid">
+                <div class="row">
+                  <div class="col-12">
+                    <nav class="navbar sticky-top navbar-expand-lg navbar-light">
+                        <a class="navbar-brand" href="index.html" id="brand">DEVANSHI PATEL</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                          <ul class="navbar-nav">
+                            <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="#">Exploring</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#start">Let's Start</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Know more about me!</a>
+                            </li>
+                          </ul>
+                        </div>
+                    </nav>
+                    <hr>
+                  </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                            <div id="Heading-main">WELCOME  <img src="C:\Users\Devanshi\Documents\PM port\Pictures\Main Page\waving-hand.png"> to my <img src="C:\Users\Devanshi\Documents\PM port\Pictures\Main Page\earth.png"> of,</div> 
+                            <br>
+                            <center><div class="sym"  id="LetBlack" style="font-size: 50px;align-content: center;">#include "code" + product <i class="fas fa-chart-area"></i></div> </center>
+                        <br><br>
+                        <!--button to display random quote-->
+                        <center><button onclick="displayQuote()" class="btn">Generate a quote it might make your day!</button></center>
+                        <div id="quote"><!--Quote will be displayed here.--></div>
+                      </div>
+                </div>
+                <div class="row">
+                  <div class="main-container" id="start">
+                    <div class="heading">
+                      <hr>
+                      <h1 class="heading__title"><i class="fa fa-flag-checkered" aria-hidden="true"></i> <u>Let's Start:</u></h1>
+                      <!--<p class="heading__credits"><a class="heading__link" target="_blank" href="https://dribbble.com/sl">Intrest area case studies,product design,product analysis,software development.</a></p>-->
+                    </div>
+                    <div class="cards">
+                        <div class="card card-1">
+                            <a href="NMO Quater Finals.html" style="color: inherit;text-decoration: none;">
+                                <div class="card__icon"><i class="fas fa-clipboard"></i></div>
+                                <h3 class="card__title">National Management Olyampiad <br>(Quater - Finals)<br></h3>
+                                <div class="status-label">Tag: Contest</div>
+                            </a>
+                        </div>
+                      <div class="card card-2">
+                            <a href="NMO Semi Finals.html" style="color: inherit;text-decoration: none;">
+                                <div class="card__icon"><i class="fas fa-clipboard"></i></div>
+                                <h3 class="card__title">National Management Olyampiad <br>(Semi - Finals)</h3>
+                                <div class="status-label">Tag: Contest</div>
+                            </a>
+                      </div>
+                      <div class="card card-3">
+                        <a href="NMO Finals.html" style="color: inherit;text-decoration: none;">
+                          <div class="card__icon"><i class="fas fa-clipboard"></i></div>
+                          <h3 class="card__title">National Management Olyampiad <br>(Finals)</h3>
+                          <div class="status-label">Tag: Contest</div>
+                      </a>
+                      </div>
+                      <!--<div class="card card-4">
+                        <div class="card__icon"><i class="fas fa-bolt"></i></div>
+                      </div>-->
+                </div>
+                
+                <div class="row">
+                    <div class="col-12" style="background-color: black;color: white;text-align: center;font-size: 25px;">
+                      <br>
+                      Connect with me on:
+                        <div id="social-media">
+                                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=devanshipportfolio@gmail.com" style="color: white;text-decoration: none;" class="fab fa-google"></a>
+                                <a href="https://www.linkedin.com/in/devanshi-p/" style="color: white;text-decoration: none;" class="fab fa-linkedin"></a>                                               
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div>Icons made by <a href="https://www.flaticon.com/authors/prettycons" title="prettycons">prettycons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+  </body>
+</html>
