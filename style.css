@@ -195,10 +195,10 @@ body {
     font-size: 20px;}
 
     /* TABS start */
-#Statement{
-    font-weight: 500;
-    font-size: 20px;
-}
+  #Statement{
+      font-weight: 500;
+      font-size: 20px;
+  }
     body h1 {
         text-align: center;
         color: #428BFF;
