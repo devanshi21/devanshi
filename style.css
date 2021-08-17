@@ -33,7 +33,7 @@ text-decoration:none !important;
 .col-12{
   font-size: 20px;
   font-weight: 900;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 .background-diff{
 background-color: rgb(147, 187, 187);
@@ -203,8 +203,8 @@ text-align: left;
     padding:5px;
     border-radius: 5px;}
 
-    .card1{padding:15px 30px 15px 30px;
-    margin:40px auto;
+    .card1{padding:10px 30px 10px 30px;
+    margin:12px auto;
     max-width:500px;
     max-height:300px;
     text-align: center;
@@ -710,9 +710,9 @@ select:focus {
   white-space: nowrap;
   font-weight:500;
   line-height: 2;
-  font-size: calc(100% + 1vw + 1vh);
+  font-size: calc(80% + 1vw + 1vh);
   color:black;
-  padding:0 5px;
+  padding:0 3px;
 }
 
 #text-1 { 

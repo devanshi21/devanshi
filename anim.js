@@ -17,7 +17,7 @@ function displayQuote(){
 /****************Text animation ************************/
 
 var text1 = ["I'm a", "I'm"];
-var text2 = ["\"Software Developer\"","\"into amazing experiences\""];
+var text2 = ["\"Software Developer\"","\"into amazing experience\""];
 var count = 2;
 setInterval(() => {
   count--;
