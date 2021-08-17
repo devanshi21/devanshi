@@ -60,10 +60,12 @@ text-align: left;
   }
   
   .heading__title {
-      text-align: left;
-      
-      font-size: 25px;
-      color: black;
+    text-align: left;
+    padding: 5px 5px 5px 5px;
+    background-color: #88bac7;
+    border-radius: 10px;
+    font-size: 28px;
+    color: black;
     font-weight: 600;
   }
   
@@ -761,4 +763,8 @@ animation: slidein 7s infinite;
   30% {width:auto;}
   80% {opacity:1;}
   100% {opacity:0;width:auto;}
+}
+.back-for-heading{
+  color: #007bb5;
+  background-color: #007bb5;
 }
