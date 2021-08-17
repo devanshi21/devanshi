@@ -9,18 +9,40 @@ body {
   align-items: center;
 }
 
-/** {
-    margin: 10;
-    padding: 10;
-    box-sizing: border-box;
-  }
-  
-  .main-container {
-    padding: 30px;
-  }*/
-  
-  /* HEADING */
-  
+/***************Navbar **************/
+@font-face{font-family:europa;src:url(https://use.typekit.net/af/821a05/00000000000000007735a082/30/l?subset_id=2&fvd=n3&v=3) format("woff2"),url(https://use.typekit.net/af/821a05/00000000000000007735a082/30/d?subset_id=2&fvd=n3&v=3) format("woff"),url(https://use.typekit.net/af/821a05/00000000000000007735a082/30/a?subset_id=2&fvd=n3&v=3) format("opentype");font-weight:300;font-style:normal;font-display:auto;}@font-face{font-family:europa;src:url(https://use.typekit.net/af/1db03a/00000000000000007735a08e/30/l?subset_id=2&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/1db03a/00000000000000007735a08e/30/d?subset_id=2&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/1db03a/00000000000000007735a08e/30/a?subset_id=2&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-display:auto;}@font-face{font-family:europa;src:url(https://use.typekit.net/af/ebcd51/00000000000000007735a081/30/l?subset_id=2&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/ebcd51/00000000000000007735a081/30/d?subset_id=2&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/ebcd51/00000000000000007735a081/30/a?subset_id=2&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;font-display:auto;}@font-face{font-family:europa;src:url(https://use.typekit.net/af/d08711/00000000000000007735a08a/30/l?subset_id=2&fvd=i3&v=3) format("woff2"),url(https://use.typekit.net/af/d08711/00000000000000007735a08a/30/d?subset_id=2&fvd=i3&v=3) format("woff"),url(https://use.typekit.net/af/d08711/00000000000000007735a08a/30/a?subset_id=2&fvd=i3&v=3) format("opentype");font-weight:300;font-style:italic;font-display:auto;}@font-face{font-family:europa;src:url(https://use.typekit.net/af/40cfbf/00000000000000007735a08f/30/l?subset_id=2&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/40cfbf/00000000000000007735a08f/30/d?subset_id=2&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/40cfbf/00000000000000007735a08f/30/a?subset_id=2&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;font-display:auto;}@font-face{font-family:europa;src:url(https://use.typekit.net/af/2a1b80/00000000000000007735a09e/30/l?subset_id=2&fvd=i7&v=3) format("woff2"),url(https://use.typekit.net/af/2a1b80/00000000000000007735a09e/30/d?subset_id=2&fvd=i7&v=3) format("woff"),url(https://use.typekit.net/af/2a1b80/00000000000000007735a09e/30/a?subset_id=2&fvd=i7&v=3) format("opentype");font-weight:700;font-style:italic;font-display:auto;}
+#navbarNav li a {
+  font-family: europa;
+  font-size: 20px;
+  font-weight: 900;
+  color: black;
+  margin-right: 10px;
+}
+#brand{ 
+  /*position: relative;*/
+  font-weight: 1000;
+  color: black;
+}
+.nav-item:hover {
+margin-left: 30px;
+margin-right: 30px;
+box-shadow: 0px 6px 1px rgba(10, 10, 0, 0.1);
+transform: scale(1.06);
+text-decoration:none !important; 
+}
+.col-12{
+  font-size: 20px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+.background-diff{
+background-color: rgb(147, 187, 187);
+border-radius: 10px;
+padding: 13px;
+text-align: left;
+}
+
+/**************NavBar Ends ****************/
   .heading {
     text-align: center;
   }
@@ -680,3 +702,51 @@ select:focus {
       margin-left: -100%; 
       }*/
 
+/******************* Animation Index-I'm ************/
+
+#text-1, #text-2 {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  font-weight:500;
+  line-height: 2;
+  font-size: calc(100% + 1vw + 1vh);
+  color:black;
+  padding:0 5px;
+}
+
+#text-1 { 
+animation: showup 7s infinite;
+}
+
+#text-2 {
+width:0px;
+animation: reveal 7s infinite;
+}
+
+#text-2-span {
+margin-left:-200px;
+animation: slidein 7s infinite;
+}
+
+@keyframes showup {
+  0% {opacity:0;}
+  20% {opacity:1;}
+  80% {opacity:1;}
+  100% {opacity:0;}
+}
+
+@keyframes slidein {
+  0% { margin-left:-800px; }
+  20% { margin-left:-800px; }
+  35% { margin-left:0px; }
+  100% { margin-left:0px; }
+}
+
+@keyframes reveal {
+  0% {opacity:0;width:0px;}
+  20% {opacity:1;width:0px;}
+  30% {width:auto;}
+  80% {opacity:1;}
+  100% {opacity:0;width:auto;}
+}
