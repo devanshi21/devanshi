@@ -242,6 +242,14 @@ text-align: left;
         /*padding: 40px 0 20px 0;*/
         margin: 0;
       }
+
+      body h2 {
+        text-align: center;
+        color: #15414e;
+        font-weight: 600;
+        /*padding: 40px 0 20px 0;*/
+        margin: 0;
+      }
     /*.tabs {
         left: 50%;
         transform: translateX(-50%);
