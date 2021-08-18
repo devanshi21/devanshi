@@ -849,4 +849,5 @@ animation: slidein 7s infinite;
   height: 170px;
   width: 230px;
   padding: 20px 20px 20px 20px;
+  box-shadow: #dd4b39;
 }
