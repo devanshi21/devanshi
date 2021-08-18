@@ -844,3 +844,9 @@ animation: slidein 7s infinite;
   -moz-transform: scale(1.4, 3.2);
   transform: scale(1.4, 3.2)
 }
+
+.img-tools{
+  height: 170px;
+  width: 230px;
+  padding: 20px 20px 20px 20px;
+}
