@@ -198,6 +198,9 @@ text-align: left;
     background: radial-gradient(#f588d8, #c0a3e5);
   }
   
+  .card-6{
+    background: radial-gradient(#2b5876, #4e4376);
+  }
   /* RESPONSIVE */
   
   @media (max-width: 1920px) {
@@ -916,7 +919,7 @@ animation: slidein 7s infinite;
 }
 
 .img-box:hover img { 
-  transform: scale(1.1);
+  transform: scale(1.0);
 }
 
 .img-box:hover .transparent-box {
