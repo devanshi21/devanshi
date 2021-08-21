@@ -880,9 +880,8 @@ animation: slidein 7s infinite;
 
 .img-box {
   box-sizing: content-box;
-  margin: 10px;
   height: 250px;
-  width: 350px;
+  width: 450px;
   overflow: hidden;
   display: inline-block;
   color: white;
