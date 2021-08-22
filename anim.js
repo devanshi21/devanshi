@@ -130,4 +130,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     counter("count1", 0, 3, 1000);
    });
+
+   /******************Visitor count ********************************/
    
