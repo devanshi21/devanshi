@@ -1025,7 +1025,7 @@ abbr[title]:focus::after {
   background: #5458F7;
   color: #fff;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 12px;
   margin-right: 10px;
 }
 .cardp main .actions button.main:hover {
