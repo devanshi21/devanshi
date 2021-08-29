@@ -29,13 +29,13 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                       <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="#">Problem Statement</a>
+                          <a class="nav-link active" aria-current="page" href="#Problem Statement">Problem Statement</a>
                         </li>
                         <li class="nav-item">
                           <a class="nav-link" href="#My Role">My Role</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#Design">HLD</a>
+                          <a class="nav-link" href="#HLD">HLD</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#Tools">Tools & Technologies</a>
@@ -51,95 +51,130 @@
                             <div class="card__icon__head"><h3 class="card__title__head">DADAS (<i class="fas fa-clock"></i> 10-15 min read*)</h3></div>    
                         </div>
                     </div>
-                    
-                    <div class="col-xl-12">
-                        <!--<center><img src="Pictures\Overview\TCS-EngiNX.jpg" class="img-fluid"></center><br><br>-->
-                        <a id="#" style="text-decoration: none;"><h2 class="background-diff"><i class="fas fa-flag"></i> Overview of the problem statement:</h2></a>
-                        <ol class="gradient-list">
+                    <!------------------------------- Problem Statement -------------------------------------------------->
+                  <section class="accordion" id="Problem Statement">
+                    <input type="checkbox" name="collapse2" id="handle2" checked="checked">
+                    <h3 class="handle">
+                      <label for="handle2"><i class="fas fa-angle-down"></i> Overview of the problem statement:</label>
+                    </h3>
+                    <div class="content">
+                          <ol class="gradient-list">
                             <li>An IOT & Deep learning based DADAS system’s aim is to <b>avoid nearly 70%* of road accidents 
                                 in India due to drowsy or drunk drivers</b>. It will also be ingrained with an innovative Analysis 
                                 & Prediction mechanism for better traffic managements and future accident avoidance.<br>
                                 * Data taken from a report of Community against Drunken Driving (CADD)</li>
-                        </ol>
+                          </ol>
+                    </div>
+                  </section>
+                    <!----------------------------------------- My Role ----------------------------------->
+                  <section class="accordion" id="My Role">
+                    <input type="checkbox" name="collapse1" id="handle1">
+                    <h3 class="handle">
+                      <label for="handle1"><i class="fas fa-angle-down"></i> My Role:</label>
+                    </h3>
+                    <div class="content">
+                      <ol class="gradient-list">
+                        <li>Brainstormed an idea for every given topics and possible solutions wrt physibility aspect.In depth analysis of each espect of the solution considering the technology espect and impact on human lifes including <b>system design</b> process.</li>
+                        <li>Having worked on game design allowed me to take up the part of <b>designing and presenting our idea in best form of articulation.</b></li>
+                        <li>Once the idea was selected which is DADAS(Drunk and Drowsiness Alert System), we divided the overall system into main 4 parts,<br><br>
+                            1)Input & Preprocessing (DADAS IOT based Input Module)<br>
+                            2)Deep Learning (DADAS Cloud Server for Processing)<br>
+                            3)Alert Mechanism.<br>
+                            4)DADAS Analytics & Prediction System.<br><br>
+                            
+                            I took up the drunk(1st and 2 nd) part and I had to tech myself Machine Learning from scratch.
+                            For any Machine learning model construction foundation is dataset and unfortunatly we were not having any dataset for identification of drunk state/drunk people to train or neither did we have any pre-trained model.
+                            A solution to this was to take up our own sample dataset, I took up the part of collecting sample,data cleaning and making sure they are ready to be feed into ML<b>(preprocessing)</b>.
+                            As we didn't have any pre-trained model we started with <b>brute force approach in which I explored and taught myself how to train images over framework/libraries like caffee and tensorflow</b>.
+                        </li>
+                        <li>At the end after other teams mates involved in integrating and making an android application we were able to achieve <b>92% training accuracy using classification algorithms</b> in drunk detection.</li>
+                      </ol>
+                    </div>
+                  </section>
 
-                        <!--------------------------------------My Role ----------------------------------------->
-                          <a id="My Role"><h2 class="background-diff"><i class="fas fa-clipboard"></i> My Role:</h2></a>
-                          <!--<div class="iframe-container">
-                              <iframe src="https://www.youtube.com/embed/5g9os0VefoE" title="Primary Education" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                          </div>-->
-                        <ol class="gradient-list">
-                            <li>Brainstormed an idea for every given topics and possible solutions wrt physibility aspect.In depth analysis of each espect of the solution considering the technology espect and impact on human lifes including <b>system design</b> process.</li>
-                            <li>Having worked on game design allowed me to take up the part of <b>designing and presenting our idea in best form of articulation.</b></li>
-                            <li>Once the idea was selected which is DADAS(Drunk and Drowsiness Alert System), we divided the overall system into main 4 parts,<br><br>
-                                1)Input & Preprocessing (DADAS IOT based Input Module)<br>
-                                2)Deep Learning (DADAS Cloud Server for Processing)<br>
-                                3)Alert Mechanism.<br>
-                                4)DADAS Analytics & Prediction System.<br><br>
-                                
-                                I took up the drunk(1st and 2 nd) part and I had to tech myself Machine Learning from scratch.
-                                For any Machine learning model construction foundation is dataset and unfortunatly we were not having any dataset for identification of drunk state/drunk people to train or neither did we have any pre-trained model.
-                                A solution to this was to take up our own sample dataset, I took up the part of collecting sample,data cleaning and making sure they are ready to be feed into ML<b>(preprocessing)</b>.
-                                As we didn't have any pre-trained model we started with <b>brute force approach in which I explored and taught myself how to train images over framework/libraries like caffee and tensorflow</b>.
-                            </li>
-                            <li>At the end after other teams mates involved in integrating and making an android application we were able to achieve <b>92% training accuracy using classification algorithms</b> in drunk detection.</li>
-                        </ol>
-                        
-                        <!--------------------------------------HLD ----------------------------------------->
-                        <a id="Design" style="text-decoration: none"><h2 class="background-diff"><i class="fas fa-clipboard"></i> High Level Design of system:</h2></a>
-                        <center><img src="Pictures\Overview\DADAS.png" class="img-fluid"></center><br><br>
-                        
-                        <!--------------------------------------HLD ----------------------------------------->
-                        <a id="Tools" style="text-decoration: none;"><h2 class="background-diff"><i class="fas fa-rocket"></i> Tools and Technologies: </h2></a>
-                        <div class="gallery-image">
-                            <div class="img-box">
-                              <img src="Pictures\Overview\unity-logo.jpg" alt="" />
-                              <div class="transparent-box">
-                                <div class="caption">
-                                  <p>Uinty 3D</p>
-                                  <p class="opacity-low">Video making + Prototype design</p>
-                                </div>
-                              </div> 
+                  <!----------------------------------------- HLD ----------------------------------->
+                  <section class="accordion" id="HLD">
+                    <input type="checkbox" name="collapse3" id="handle3">
+                    <h3 class="handle">
+                      <label for="handle3"><i class="fas fa-angle-down"></i> HLD:</label>
+                    </h3>
+                    <div class="content">
+                      <center><img src="Pictures\Overview\DADAS.png" class="img-fluid"></center><br><br>
+                    </div>
+                  </section>
+
+                  <!----------------------------------------- Technology ----------------------------------->
+                  <section class="accordion" id="Tools">
+                    <input type="checkbox" name="collapse4" id="handle4">
+                    <h3 class="handle">
+                      <label for="handle4"><i class="fas fa-angle-down"></i> Technology and tools:</label>
+                    </h3>
+                    <div class="content">
+                      <div class="gallery-image">
+                        <div class="img-box">
+                          <img src="Pictures\Overview\unity-logo.jpg" alt="" />
+                          <div class="transparent-box">
+                            <div class="caption">
+                              <p>Uinty 3D</p>
+                              <p class="opacity-low">Video making + Prototype design</p>
                             </div>
-                            <div class="img-box">
-                              <img src="Pictures\Overview\Tensorflow.png" alt="" />
-                              <div class="transparent-box">
-                                <div class="caption">
-                                  <p>Tensorflow</p>
-                                  <p class="opacity-low"></p>
-                                </div>
-                              </div>
+                          </div> 
+                        </div>
+                        <div class="img-box">
+                          <img src="Pictures\Overview\Tensorflow.png" alt="" />
+                          <div class="transparent-box">
+                            <div class="caption">
+                              <p>Tensorflow</p>
+                              <p class="opacity-low"></p>
                             </div>
-                            <div class="img-box">
-                              <img src="Pictures\Overview\caffee_.png" alt="" />
-                              <div class="transparent-box">
-                                <div class="caption">
-                                  <p>Caffee</p>
-                                  <p class="opacity-low"></p>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="img-box">
-                              <img src="Pictures\Overview\python_.png" alt="" />
-                              <div class="transparent-box">
-                                <div class="caption">
-                                  <p>Python</p>
-                                  <p class="opacity-low">For Data cleaning and training model.</p>
-                                </div>
-                              </div> 
-                            </div>
-                            <div class="img-box">
-                                <img src="Pictures\Overview\data-cleaning.png" alt="" />
-                                <div class="transparent-box">
-                                  <div class="caption">
-                                    <p>Process</p>
-                                    <p class="opacity-low">It was the 50% part of whole process.</p>
-                                  </div>
-                                </div> 
-                              </div>
                           </div>
+                        </div>
+                        <div class="img-box">
+                          <img src="Pictures\Overview\caffee_.png" alt="" />
+                          <div class="transparent-box">
+                            <div class="caption">
+                              <p>Caffee</p>
+                              <p class="opacity-low"></p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="img-box">
+                          <img src="Pictures\Overview\python_.png" alt="" />
+                          <div class="transparent-box">
+                            <div class="caption">
+                              <p>Python</p>
+                              <p class="opacity-low">For Data cleaning and training model.</p>
+                            </div>
+                          </div> 
+                        </div>
+                        <div class="img-box">
+                            <img src="Pictures\Overview\data-cleaning.png" alt="" />
+                            <div class="transparent-box">
+                              <div class="caption">
+                                <p>Process</p>
+                                <p class="opacity-low">It was the 50% part of whole process.</p>
+                              </div>
+                            </div> 
+                          </div>
+                      </div>
+                      </div>
+                    </div>
+                  </section>
 
-                     </div>
+                  <!----------------------------------------- Footer ----------------------------------->                  
+                <div class="row">
+                  <div class="col-12" style="background-color: black;color: white;text-align: center;font-size: 25px;">
+                    <br>
+                    Connect with me on:
+                      <div id="social-media">
+                              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=devanshipportfolio@gmail.com" style="color: white;text-decoration: none;" class="fab fa-google"></a>
+                              <a href="https://www.linkedin.com/in/devanshi-p/" style="color: white;text-decoration: none;" class="fab fa-linkedin"></a>                                               
+                      </div>
+                  </div>
+              </div>
+
                 </div>
+
         </div>
   </body>
 </html>
