@@ -201,6 +201,9 @@ text-align: left;
   .card-6{
     background: radial-gradient(#2b5876, #4e4376);
   }
+  .card-6{
+    background: radial-gradient(#2b5876, #4e4376);
+  }
   /* RESPONSIVE */
   
   @media (max-width: 1920px) {
