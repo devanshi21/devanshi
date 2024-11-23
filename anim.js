@@ -128,7 +128,7 @@ document.addEventListener("DOMContentLoaded", () => {
        }
       }, step);
     }
-    counter("count1", 0, 4, 1000);
+    counter("count1", 0, 5, 1000);
    });
 
    /******************Awards animation********************************/
